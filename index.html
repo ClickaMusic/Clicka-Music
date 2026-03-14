@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Clicka Music</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
 background:#0b0b0b;
 color:white;
-text-align:center;
 }
 
 header{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
 background:black;
-padding:20px;
-font-size:22px;
+z-index:100;
+}
+
+.logo{
+font-weight:700;
+letter-spacing:3px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
 }
 
 .hero{
 height:100vh;
+background:url("https://images.unsplash.com/photo-1501612780327-45045538702b") center/cover;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+text-align:center;
 }
 
-button{
-padding:15px 30px;
+.hero h1{
+font-size:80px;
+letter-spacing:8px;
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
 background:#1db954;
 border:none;
 font-size:18px;
 cursor:pointer;
 }
 
-</style>
+.section{
+padding:120px 10%;
+text-align:center;
+}
 
-</head>
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
 
-<body>
+.card{
+background:#141414;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
 
-<header>
-CLICKA MUSIC
-</header>
+.card:hover{
+transform:translateY(-10px);
+}
 
-<section class="hero">
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
 
-<h1>CLICKA</h1>
-<p>El sonido de la nueva generación</p>
+.card h3{
+padding:15px;
+}
 
-<button>Escuchar ahora</button>
-
-</section>
-
-</body>
-</html>
+footer{
+background:#050505;
+paddi
